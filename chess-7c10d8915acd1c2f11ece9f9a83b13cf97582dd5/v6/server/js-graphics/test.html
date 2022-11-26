@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+</head>
+<body>
+    
+    <style>
+        *{
+            cursor: default;
+            margin: 0;
+            padding: 0;
+        }
+        p:hover{
+            color:red;
+
+        }
+
+        #box1{
+            height: 200px;
+            background-color: aqua;
+        }
+
+        #box2{
+            height: 200px;
+            background-color: gray;
+        }
+
+    </style>
+
+    <p id="test">test</p>
+    <div id="box1"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="box2"></div>
+
+    <div id="test1"></div>
+    <div id="test2"></div>
+    <div id="test3"></div>
+    <div id="test4"></div>
+
+    <!--<script src="desktop.js"></script>
+    <script src="svg_graphs.js"></script> -->
+    <script src="cwui.js"></script>
+    <script src="window-engine.js"></script>
+    <script>
+let g = new BarChart(500,900,'test1','test2',[100,50,20,40,80,10,5,30,70,60,50,40,30,15,12,7],[1,2,3,5,6,7,8,9,10,1,1,1,1,1,1,1]);
+let g1 = new BarChart(500,900,'test2','lel',[20,10,2,5,8],[1,2,3,4,5]);
+let g2 = new BarChart(500,900,'test3','lal',[10,33,11,98,80,1,5,30,70,60,50,40,30,15,12,10,9,8,7,6,67,44,55,22,4],[1,2,3,4,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]);
+let g3 = new DottedChart(500,900,'test4','c',[95,0,10,50,25,35,45,23,27,70,5,69],[0,0,10,5,3,2,1,7,8,6,6,4])
+g.setHeadline('irgendwelche daten grg eg eg eg ergerg e')
+//const w = new Widget(500,1000,'widget','undefined');
+g.setBarColor('purple');
+g.smartScale();
+//g.setAxisWidth(5)
+//g.setTooltip(true)
+g.setBarAnimationTime(1);
+g.setBarHoverBrightness(300);
+g.setBarAnimationTime(1.5);
+g2.setBarColor('green');
+g2.smartScale();
+g1.smartScale();
+//g3.setColorFateTime(2)
+//g3.setBarAnimationTime(5)
+//g3.setAxisWidth(3)
+//g3.setBarHoverBrightness(150)
+//g3.setBarColor('orange')
+//g3.setAxisColor('gray')
+//g3.setBarSpace(4)
+g3.setDotColor('rgb(255,0,0)')
+g3.setDotHoverBrightness(50);
+g3.setDotOpacity(0.6)
+//g3.setAxisWidth(5)
+g3.render();
+g.render();
+g1.render();
+g2.render();
+g2.setHeadline("Lorem Ipsum")
+g3.setHeadline('Random Data')
+var win = new Window(500,900,0,0)
+win.setID('win1')
+let g4 = new DottedChart(500,900,'win1','e',[95,0,10,50,25,35,45,23,27,70,5,69],[0,0,10,5,3,2,1,7,8,6,6,4])
+g4.setDotColor('green')
+g4.setHeadline('Random Chart')
+g4.render()
+
+//pane.svg_canvas.appendChild(new TooltipBuilder(`LALALA`,'black','12px','rgb(252,252,252)',20,20).build().getElement())
+    </script>
+</body>
+</html>

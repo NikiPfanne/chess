@@ -1,0 +1,5 @@
+ip: 192.168.0.69
+port: 5000
+ssl: "false"
+key-path: "test"
+cert-path: "test"

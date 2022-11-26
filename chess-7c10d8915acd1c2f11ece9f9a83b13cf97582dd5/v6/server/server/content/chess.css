@@ -1,0 +1,23 @@
+:root {
+    --night-black: #241623;
+    --cream-white: #f7f7f2;
+    --vblue: #657ED4;
+    --cred: #E5625E;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #657ED4;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
